@@ -16,6 +16,9 @@ public class SysController {
 
     public HeartBeatResponse heartbeat(HeartBeatRequest request){
 
+        if(!heartBeatService.accept(request)){
+
+        }
 
         return HeartBeatResponse.buildSuccess();
     }

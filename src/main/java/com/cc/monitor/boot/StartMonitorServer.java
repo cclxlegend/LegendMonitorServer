@@ -10,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class StartMonitorServer {
 
     public static void main(String[] args) {
+
         SpringApplication.run(StartMonitorServer.class, args);
     }
 }
