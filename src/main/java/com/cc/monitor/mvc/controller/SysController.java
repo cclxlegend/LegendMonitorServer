@@ -16,11 +16,13 @@ public class SysController {
 
     public HeartBeatResponse heartbeat(HeartBeatRequest request){
 
-        if(!heartBeatService.accept(request)){
-
+        if(!heartBeatService.accept(request)) {
+            return HeartBeatResponse.buildFail(1,"fail");
         }
 
         return HeartBeatResponse.buildSuccess();
     }
+
+
 
 }

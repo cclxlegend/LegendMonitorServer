@@ -8,4 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/biz", produces = "application/json;charset=utf-8")
 public class BizController {
 
+
+
 }
