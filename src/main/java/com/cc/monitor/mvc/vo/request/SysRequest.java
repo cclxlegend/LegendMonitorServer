@@ -10,36 +10,25 @@ public class SysRequest {
      */
 
     // 总内存 单位byte
-    private long mem_total_size;
-    // 内存使用比率
-    private float mem_used;
-    // 内存缓存比率
-    private float mem_cached;
-    // 内存交换比率
-    private float mem_swap;
+    private long mem_total;
+    // 剩余内存
+    private long mem_free;
+    // 交换的虚拟内存
+    private long mem_commited_vitual;
 
     /**
      * Cpu指标
      */
     // Cpu使用比率
-    private float cpu_used;
+    private double cpu_load;
+    // 当前进程占用CPU比率
+    private double process_cpu_load;
 
     /**
      * 磁盘指标
      */
-    //磁盘总量 单位 byte
-    private long disk_total_size;
-    // 磁盘当前占用率
-    private float disk_used;
-
-    /**
-     * 网络流量指标
-     */
-
-    // 网络最大支持流量 单位 nyte
-    private long netflow_total_size;
-    // 网络通道占用率
-    private float netflow_used;
-
-
+    // 磁盘总量 单位 byte
+    private long disk_total;
+    // 当前磁盘容量
+    private long disk_free;
 }

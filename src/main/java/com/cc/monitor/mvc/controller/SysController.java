@@ -27,6 +27,12 @@ public class SysController {
         return HeartBeatResponse.buildSuccess();
     }
 
+    @RequestMapping(value = {"/info"}, method = RequestMethod.POST)
+    @ResponseBody
+    public HeartBeatResponse info(HeartBeatRequest request){
+        return null;
+    }
+
 
 
 }
