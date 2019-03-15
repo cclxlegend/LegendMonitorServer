@@ -1,8 +1,8 @@
 package com.cc.monitor.boot;
 
-import org.springframework.context.annotation.Configuration;
+import org.springframework.boot.SpringBootConfiguration;
 
-@Configuration
+@SpringBootConfiguration
 public class ServerConfig {
     
 }

@@ -1,22 +1,21 @@
 package com.cc.monitor.mvc.filter;
 
+import org.springframework.stereotype.Component;
+import org.springframework.web.filter.OncePerRequestFilter;
+
 import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class AuthFilter implements Filter {
+@Component("authFilter")
+public class AuthFilter extends OncePerRequestFilter {
 
     @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
+    protected void doFilterInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, FilterChain filterChain) throws ServletException, IOException {
 
     }
 
-    @Override
-    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
 
-    }
 
-    @Override
-    public void destroy() {
-
-    }
 }
